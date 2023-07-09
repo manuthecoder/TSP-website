@@ -36,7 +36,7 @@ export default function Home() {
             </h1>
           </div>
         </div>
-        <div className="box mt-3 h-96"></div>
+        <div className="box mt-3 h-96 mb-10"></div>
         {/*  */}
       </div>
     </>
