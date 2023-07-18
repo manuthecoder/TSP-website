@@ -5,6 +5,13 @@
 :root {
   --font-body: "Ubuntu Condensed", sans-serif;
   --font-heading: "PT Serif", serif;
+
+  --colors-red: #aa6f73;
+  --colors-purple: #66545e;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -49,6 +56,11 @@ body {
 
   // Grid
   .box {
-    @apply w-full rounded-3xl bg-gradient-to-tr from-gray-100 to-gray-300 p-5;
+    @apply w-full rounded-3xl bg-gray-200 p-5 border-4;
+    border-color: var(--colors-red);
+  }
+
+  .heading {
+    color: var(--colors-red);
   }
 }

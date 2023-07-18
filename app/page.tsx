@@ -3,8 +3,6 @@ import { Navbar } from "./navbar";
 export default function Home() {
   return (
     <>
-      <Navbar />
-
       <div className="container">
         {/* Banner */}
         <div className="banner">

@@ -11,7 +11,7 @@ export function Navbar() {
 
       {/* Links */}
       {[
-        { name: "Home", href: "/home" },
+        { name: "Home", href: "/" },
         { name: "Magazine", href: "/magazine" },
         { name: "Blog", href: "/blog" },
         { name: "Start a chapter", href: "/start-a-chapter" },
