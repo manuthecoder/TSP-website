@@ -31,7 +31,7 @@ export default function Home() {
 
         {/* Hear more from our founders */}
         <div
-          className="flex my-10 gap-5 items-center cursor hover:bg-gray-100"
+          className="flex my-5 p-3 bg-gray-50 gap-5 items-center cursor-pointer rounded-full box hover:bg-gray-100"
           onClick={() => router.push("/about")}
         >
           <div className="shrink-0 h-20 w-20 bg-gray-300 rounded-full"></div>
