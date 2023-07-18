@@ -71,7 +71,7 @@ export default function Page() {
               about us
             </h1>
           </div>
-          <div className="box p-5 grow text-center flex items-center content-center">
+          <div className="box p-5 grow text-center flex items-center justify-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

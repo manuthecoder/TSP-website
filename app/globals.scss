@@ -33,20 +33,22 @@ body {
     @apply flex fixed top-0 py-3 border-b w-full px-5 h-16 items-center z-10 backdrop-blur-lg bg-[rgba(255,255,255,.5)];
 
     & .navbar__logo {
-      @apply flex items-center gap-5 mr-auto;
+      @apply flex items-center gap-5 mr-auto cursor-pointer;
     }
-
     & .navbar__search {
-      @apply block max-w-xs w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 ml-1 h-10;
+      @apply hidden sm:block max-w-xs w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 ml-1 h-10;
     }
     & .navbar__link {
-      @apply flex items-center rounded-md hover:bg-gray-100 px-3 h-10;
+      @apply items-center rounded-md hover:bg-gray-100 px-3 h-10 hidden sm:flex;
+    }
+    & .navbar__mobileButton {
+      @apply active:bg-gray-100 h-10 w-10 rounded-full flex sm:hidden items-center justify-center;
     }
   }
 
   // Container
   .container {
-    @apply pt-16 mt-10 w-full mx-auto;
+    @apply pt-16 px-4 mt-10 w-full mx-auto;
   }
 
   // Banner
