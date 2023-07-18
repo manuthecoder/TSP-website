@@ -69,6 +69,12 @@ export function Navbar() {
           className="navbar__menu"
         >
           <Links isMobile />
+          <input
+            type="text"
+            placeholder="Search..."
+            className="navbar__search"
+            style={{ display: "block!important" }}
+          />
         </motion.div>
       )}
     </>
