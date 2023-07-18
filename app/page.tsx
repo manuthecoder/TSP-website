@@ -22,7 +22,7 @@ export default function Home() {
         {/*  */}
 
         {/* Grid */}
-        <div className="flex mt-3 gap-2 cursor hover:bg-gray-100">
+        <div className="flex mt-3 gap-2 ">
           <div className="box"></div>
           <div className="box">
             <h1 className="font-heading text-2xl mb-10">Our vision</h1>
@@ -31,7 +31,7 @@ export default function Home() {
 
         {/* Hear more from our founders */}
         <div
-          className="flex my-10 gap-5 items-center"
+          className="flex my-10 gap-5 items-center cursor hover:bg-gray-100"
           onClick={() => router.push("/about")}
         >
           <div className="shrink-0 h-20 w-20 bg-gray-300 rounded-full"></div>
