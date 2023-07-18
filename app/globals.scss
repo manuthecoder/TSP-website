@@ -29,9 +29,14 @@ body {
 }
 
 @layer components {
+  // Navbar menu
+  .navbar__menu {
+    @apply fixed top-0 px-4 pt-20 pb-4 backdrop-blur-lg bg-[rgba(255,255,255,.5)] flex flex-col w-full gap-2;
+  }
+
   // Navbar
   .navbar {
-    @apply flex fixed top-0 py-3 border-b w-full px-5 h-16 items-center z-10 backdrop-blur-lg bg-[rgba(255,255,255,.5)];
+    @apply flex fixed top-0 py-3 border-b w-full px-5 h-16 items-center z-[999] backdrop-blur-lg bg-[rgba(255,255,255,.5)];
 
     & .navbar__logo {
       @apply flex items-center gap-5 mr-auto cursor-pointer;
@@ -44,6 +49,10 @@ body {
     }
     & .navbar__mobileButton {
       @apply active:bg-gray-100 h-10 w-10 rounded-full flex sm:hidden items-center justify-center;
+
+      &.active {
+        @apply bg-gray-100 active:bg-gray-200;
+      }
     }
   }
 
