@@ -29,14 +29,18 @@ body {
 }
 
 @layer components {
+  // overlay
+  .overlay {
+    @apply fixed top-0 left-0 w-full h-full bg-gray-700 opacity-50 backdrop-blur-lg flex;
+  }
   // Navbar menu
   .navbar__menu {
-    @apply fixed top-0 px-4 pt-20 pb-4 backdrop-blur-lg bg-[rgba(255,255,255,.5)] flex flex-col w-full gap-2;
+    @apply fixed top-0 px-4 pt-20 pb-4 backdrop-blur-lg bg-[rgba(255,255,255,.9)] flex flex-col w-full gap-2;
   }
 
   // Navbar
   .navbar {
-    @apply flex fixed top-0 py-3 border-b w-full px-5 h-16 items-center z-[999] backdrop-blur-lg bg-[rgba(255,255,255,.5)];
+    @apply flex fixed top-0 py-3 border-b w-full px-5 h-16 items-center z-[999] backdrop-blur-lg bg-[rgba(255,255,255,.9)];
 
     & .navbar__logo {
       @apply flex items-center gap-5 mr-auto cursor-pointer;

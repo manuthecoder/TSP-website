@@ -62,6 +62,7 @@ export function Navbar() {
           </span>
         </div>
       </div>
+      {mobileOpen && <div className="overlay" />}
       {mobileOpen && (
         <motion.div
           initial={{ y: -100, opacity: 0 }}
