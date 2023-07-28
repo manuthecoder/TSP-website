@@ -22,6 +22,7 @@ export function Navbar() {
       <Link
         key={href}
         className="navbar__link"
+        {...href.includes("https://") && { target: "_blank" }}
         href={href}
         style={{
           ...(isMobile && { display: "flex!important" }),
