@@ -15,9 +15,9 @@ export function Navbar() {
       { name: "Home", href: "/" },
       { name: "Magazine", href: "/magazine" },
       { name: "Blog", href: "/blog" },
-      { name: "Start a chapter", href: "https://forms.gle/CyhVa3TCHqi3aBTu8" },
+      { name: "Start a Chapter", href: "https://forms.gle/CyhVa3TCHqi3aBTu8" },
       { name: "About us", href: "/about" },
-      { name: "Donate now", href: "/donate-now" },
+      { name: "Support us", href: "/donate-now" },
     ].map(({ name, href }) => (
       <Link
         key={href}
