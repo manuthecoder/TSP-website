@@ -89,4 +89,8 @@ body {
       object-fit: cover;
     }
   }
+
+  .blog-category {
+    @apply font-heading text-3xl mb-4;
+  }
 }
