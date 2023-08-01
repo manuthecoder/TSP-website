@@ -52,7 +52,7 @@ export default function Blog() {
         <div className="col-span-2">
           <h2 className="blog-category">Recent events</h2>
           {articles.map((article) => (
-            <div className="mb-4 flex gap-4">
+            <div className="mb-4 flex gap-4" key={article.name}>
               <div className="box h-36 w-36 shrink-0"></div>
               <div className="w-full">
                 <h2 className="heading font-heading text-2xl my-1">
