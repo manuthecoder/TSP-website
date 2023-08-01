@@ -12,19 +12,28 @@ export function Navbar() {
 
   const Links = ({ isMobile = false }) => {
     return [
-      { name: "Home", href: "/" },
       { name: "Magazine", href: "/magazine" },
       { name: "Blog", href: "/blog" },
       { name: "Start a Chapter", href: "https://forms.gle/CyhVa3TCHqi3aBTu8" },
-      { name: "About us", href: "/about" },
+      { name: "About", href: "/about" },
       { name: "Support us", href: "/donate-now" },
+      {
+        name: "Join our mailing list",
+        href: "https://forms.gle/zCMkYn8xqjhsTiTr9",
+      },
     ].map(({ name, href }) => (
       <Link
         key={href}
         className="navbar__link"
-        {...href.includes("https://") && { target: "_blank" }}
+        {...(href.includes("https://") && { target: "_blank" })}
         href={href}
         style={{
+          ...(href === "https://forms.gle/zCMkYn8xqjhsTiTr9" && {
+            background: "var(--colors-purple)",
+            color: "#fff",
+            borderRadius: 9999,
+            padding: "10px 15px",
+          }),
           ...(isMobile && { display: "flex!important" }),
         }}
       >
