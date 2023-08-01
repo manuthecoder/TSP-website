@@ -162,6 +162,7 @@ export default function Page() {
             {["department", "divider", "board"].map((head) =>
               head == "divider" ? (
                 <div
+                  key={head}
                   style={{ border: "2px solid var(--colors-red)" }}
                   className="h-full"
                 />
