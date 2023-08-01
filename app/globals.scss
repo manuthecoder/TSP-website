@@ -76,7 +76,17 @@ body {
     border-color: var(--colors-red);
   }
 
-  .heading {
+  .heading,
+  .text-red {
     color: var(--colors-red);
+  }
+
+  // About us page
+  .howWeWork-grid {
+    @apply w-full text-center;
+    & img {
+      height: 200px;
+      object-fit: cover;
+    }
   }
 }
