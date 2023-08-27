@@ -14,7 +14,7 @@ export default function Home() {
         <div className="banner box overflow-hidden h-auto px-5 mb-10 to-gray-100 from-gray-100 relative h-[300px]">
           <div className="banner__content">
             <motion.div
-              initial={{ y: 50, opacity: 0, scale: 0.7 }}
+              initial={{ y: 20, opacity: 0, scale: 0.9 }}
               animate={{ y: 0, opacity: 1, scale: 1 }}
             >
               <h1 className="font-heading text-4xl font-[700]">
@@ -22,7 +22,7 @@ export default function Home() {
               </h1>
             </motion.div>
             <motion.div
-              initial={{ y: 50, opacity: 0, scale: 0.7 }}
+              initial={{ y: 20, opacity: 0, scale: 0.9 }}
               animate={{ y: 0, opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
