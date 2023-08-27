@@ -96,7 +96,7 @@ export default function Page() {
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
-            <h1 className="font-heading text-4xl mb-2 sm:text-6xl font-[700]">
+            <h1 className="font-heading text-5xl mb-1 sm:text-6xl font-[700]">
               about us
             </h1>
           </motion.div>
@@ -138,36 +138,51 @@ export default function Page() {
         </h1>
 
         {/* 3 column grid */}
-        <div className="flex items-center gap-4 my-4 flex-col-reverse sm:flex-row">
+        <div className="flex items-center sm:gap-4 my-4 flex-col-reverse sm:flex-row">
           <div className="howWeWork-grid">
             <Image alt="icon" src="/about/01.svg" width={400} height={400} />
-            <h3 className="text-xl">
-              We publish articles for all-around STEM exposure
-            </h3>
-            <Link href="/blog" className="text-red">
-              READ NOW
-            </Link>
+            <div>
+              <h3 className="text-xl">
+                We publish articles for all-around STEM exposure
+              </h3>
+              <Link href="/blog" className="link text-red">
+                READ NOW{" "}
+                <span className="material-symbols-outlined">
+                  arrow_forward_ios
+                </span>
+              </Link>
+            </div>
           </div>
           <div className="howWeWork-grid">
             <Image alt="icon" src="/about/02.svg" width={400} height={400} />
-            <h3 className="text-xl">
-              We fundraise towards making STEAM accessible to all
-            </h3>
-            <Link
-              href="https://forms.gle/CyhVa3TCHqi3aBTu8"
-              className="text-red"
-            >
-              START A CHAPTER
-            </Link>
+            <div>
+              <h3 className="text-xl">
+                We fundraise towards making STEAM accessible to all
+              </h3>
+              <Link
+                href="https://forms.gle/CyhVa3TCHqi3aBTu8"
+                className="text-red link"
+              >
+                START A CHAPTER
+                <span className="material-symbols-outlined">
+                  arrow_forward_ios
+                </span>
+              </Link>
+            </div>
           </div>
           <div className="howWeWork-grid">
             <Image alt="icon" src="/about/03.svg" width={400} height={400} />
-            <h3 className="text-xl">
-              We host STEAM events all accross Orange County
-            </h3>
-            <Link href="/blog" className="text-red">
-              RECENT ACTIVITIES
-            </Link>
+            <div>
+              <h3 className="text-xl">
+                We host STEAM events all accross Orange County
+              </h3>
+              <Link href="/blog" className="text-red link">
+                RECENT ACTIVITIES
+                <span className="material-symbols-outlined">
+                  arrow_forward_ios
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -260,7 +275,7 @@ export default function Page() {
                         onClick={() => setActiveMember(member)}
                       >
                         <div
-                          className={`tab min-w-[200px] ${
+                          className={`tab min-w-[200px] sm:min-w-[10px] ${
                             activeMember.name === member.name && "active"
                           }`}
                         >
