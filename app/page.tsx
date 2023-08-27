@@ -14,7 +14,9 @@ export default function Home() {
           style={{ background: "transparent" }}
         >
           <div className="banner__content">
-            <h1 className="font-heading text-4xl">The Steamology Project</h1>
+            <h1 className="font-heading text-4xl font-[700]">
+              The Steamology Project
+            </h1>
             <p className="font-body text-lg">
               A community of students and educators who are passionate about
               STEAM.
