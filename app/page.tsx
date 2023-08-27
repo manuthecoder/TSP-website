@@ -26,7 +26,7 @@ export default function Home() {
                 transition={{ delay: 0.2 }}
                 className="sticky z-10"
               >
-                <p className="font-body text-lg">
+                <p className="font-body text-lg mt-2">
                   A community of students and educators who are passionate about
                   STEAM.
                 </p>
