@@ -138,7 +138,7 @@ export default function Page() {
         </h1>
 
         {/* 3 column grid */}
-        <div className="flex items-center sm:gap-4 my-4 flex-col-reverse sm:flex-row">
+        <div className="flex items-center mb-2 sm:gap-4 my-4 flex-col-reverse sm:flex-row">
           <div className="howWeWork-grid">
             <Image alt="icon" src="/about/01.svg" width={400} height={400} />
             <div>
