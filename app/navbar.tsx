@@ -48,7 +48,12 @@ export function Navbar() {
 
   return (
     <>
-      <div className="navbar">
+      <motion.div
+        className="navbar"
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.5 }}
+      >
         <div className="navbar__logo" onClick={() => router.push("/")}>
           <Image src="/logo.svg" alt="Steamology Logo" width={40} height={40} />
           <h1 className="font-heading text-lg">
@@ -77,7 +82,7 @@ export function Navbar() {
             {mobileOpen ? "close" : "menu"}
           </span>
         </div>
-      </div>
+      </motion.div>
       {mobileOpen && (
         <div className="overlay" onClick={() => setMobileOpen(false)} />
       )}

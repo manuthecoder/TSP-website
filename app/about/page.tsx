@@ -92,10 +92,23 @@ export default function Page() {
           alt="Activity"
         />
         <div className="absolute flex justify-center items-center flex-col p-5 bg-[rgba(0,0,0,0.2)] text-white bottom-0 left-0 top-0 left-0 backdrop-blur-[7px] w-full h-full">
-          <h1 className="font-heading text-4xl mb-2 sm:text-6xl font-[700]">
-            about us
-          </h1>
-          <h1 className="text-xl opacity-90">For your peers, by your peers</h1>
+          <motion.div
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+          >
+            <h1 className="font-heading text-4xl mb-2 sm:text-6xl font-[700]">
+              about us
+            </h1>
+          </motion.div>
+          <motion.div
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            <h3 className="text-xl opacity-90">
+              For your peers, by your peers
+            </h3>
+          </motion.div>
         </div>
       </div>
 
