@@ -231,7 +231,7 @@ export default function Page() {
                 animate={{ scale: 1, y: 0 }}
                 key={activeTab}
               >
-                <div className="flex gap-2 justify-center">
+                <div className="flex gap-2 sm:justify-center overflow-scroll max-w-[100vw]">
                   {staff
                     .filter((member) => member.head === activeTab)
                     .map((member) => (
@@ -241,7 +241,7 @@ export default function Page() {
                         onClick={() => setActiveMember(member)}
                       >
                         <div
-                          className={`tab ${
+                          className={`tab min-w-[200px] ${
                             activeMember.name === member.name && "active"
                           }`}
                         >
@@ -265,7 +265,7 @@ export default function Page() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
             >
-              <div className="flex items-center gap-10">
+              <div className="flex items-center gap-10 flex-col sm:flex-row">
                 <div className="h-full shrink-0">
                   <div className="w-36 h-36 border border-gray-700 rounded-full overflow-hidden">
                     <Image
