@@ -27,6 +27,7 @@ export function Navbar() {
         className="navbar__link"
         {...(href.includes("https://") && { target: "_blank" })}
         href={href}
+        onClick={() => setMobileOpen(false)}
         style={{
           ...(href === "https://forms.gle/zCMkYn8xqjhsTiTr9" && {
             background: "var(--colors-light-pink)",

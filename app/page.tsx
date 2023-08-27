@@ -16,6 +16,7 @@ export default function Home() {
             <motion.div
               initial={{ y: 20, opacity: 0, scale: 0.9 }}
               animate={{ y: 0, opacity: 1, scale: 1 }}
+              className="sticky z-10"
             >
               <h1 className="font-heading text-4xl font-[700]">
                 The Steamology Project
@@ -25,6 +26,7 @@ export default function Home() {
               initial={{ y: 20, opacity: 0, scale: 0.9 }}
               animate={{ y: 0, opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
+              className="sticky z-10"
             >
               <p className="font-body text-lg">
                 A community of students and educators who are passionate about
@@ -37,7 +39,10 @@ export default function Home() {
               width={300}
               height={300}
               className="absolute bottom-0 right-0 mr-5 animate-spin opacity-60"
-              style={{ marginBottom: "-120px", animationDuration: "60s" }}
+              style={{
+                marginBottom: "-120px",
+                animationDuration: "60s",
+              }}
               alt="Logo"
             />
           </div>
