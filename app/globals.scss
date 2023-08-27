@@ -37,11 +37,11 @@ body {
 @layer components {
   // overlay
   .overlay {
-    @apply fixed z-10 top-0 left-0 w-full h-full bg-gray-700 opacity-50 backdrop-blur-lg flex;
+    @apply fixed z-20 top-0 left-0 w-full h-full bg-gray-700 opacity-50 backdrop-blur-lg flex;
   }
   // Navbar menu
   .navbar__menu {
-    @apply z-10 fixed top-0 px-4 pt-20 pb-4 backdrop-blur-lg bg-[rgba(255,255,255,.9)] flex flex-col w-full gap-2;
+    @apply z-20 fixed top-0 px-4 pt-20 pb-4 backdrop-blur-lg bg-[rgba(255,255,255,.9)] flex flex-col w-full gap-2;
   }
 
   // Navbar

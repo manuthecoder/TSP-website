@@ -12,7 +12,7 @@ export default function Home() {
       <div className="container">
         {/* Banner */}
         <div className="banner box overflow-hidden h-auto px-5 mb-10 to-gray-100 from-gray-100 relative h-[300px]">
-          <div className="banner__content">
+          <div className="banner__content sm:pt-20">
             <motion.div
               initial={{ y: 20, opacity: 0, scale: 0.9 }}
               animate={{ y: 0, opacity: 1, scale: 1 }}
@@ -38,9 +38,8 @@ export default function Home() {
               src="/logo.svg"
               width={300}
               height={300}
-              className="absolute bottom-0 right-0 mr-5 animate-spin opacity-60"
+              className="absolute bottom-0 right-0 mr-5 w-40 sm:w-60 sm:h-60 h-40 -mb-16 sm:-mb-20 animate-spin opacity-60"
               style={{
-                marginBottom: "-120px",
                 animationDuration: "60s",
               }}
               alt="Logo"
