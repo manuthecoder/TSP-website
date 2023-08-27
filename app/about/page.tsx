@@ -104,7 +104,7 @@ export default function Page() {
         <div className="w-full flex flex-col py-7">
           <div className="p-5">
             <h1 className="font-heading text-5xl heading sm:text-left text-center">
-              Our mission
+              our mission
             </h1>
           </div>
           <div className="px-5 grow flex items-center justify-center sm:text-left text-center">
@@ -185,7 +185,12 @@ export default function Page() {
                   src={member.image}
                   width={1241 / 2}
                   height={1443 / 2}
-                  style={{ height: "100%", width: "100%", objectFit: "cover" }}
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    objectFit: "cover",
+                    objectPosition: "bottom",
+                  }}
                   alt={member.name}
                 />
               </div>
@@ -246,7 +251,7 @@ export default function Page() {
                             activeMember.name === member.name && "active"
                           }`}
                         >
-                          <h4 className="font-heading ellipsis overflow-hidden">
+                          <h4 className="ellipsis overflow-hidden">
                             {member.name}
                           </h4>
                           <p>{member.role}</p>
