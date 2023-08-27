@@ -28,11 +28,11 @@ const staff = [
     bio: "Rachel is a junior at Irvine High School and is a member of her school’s mock trial team and school newspaper. Additionally, she has a passion for marketing and business management, serving as a secretary for the Junior Class Council and as a publicist for a variety of clubs and groups, including the nonprofit organization Orphan Assistance Fund. Rachel's also a violinist for her school's orchestra and has received awards for her playing.",
   },
   {
-    image: "/people/andrew.png",
+    image: "/people/andrew.png?purge=dev",
     name: "Andrew Ro",
     head: "board",
     role: "Publicist",
-    bio: "(incomplete)",
+    bio: "Andrew is a rising sophomore at Irvine High School and has a passion for graphic design, digital art, and marketing. Along with being a cellist for his school orchestra and a beginner saxophonist for his school marching band, Andrew currently serves as the publicist of the Steamology Project and continues to spread information about STEAM",
   },
   {
     image: "/people/adah.png",
