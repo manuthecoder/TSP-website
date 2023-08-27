@@ -222,11 +222,13 @@ export default function Page() {
                   alt={member.name}
                 />
               </div>
-              <p className="mt-2">{member.role}</p>
-              <h4 className="text-3xl heading font-heading mb-2">
-                {member.name}
-              </h4>
-              <p>{member.bio}</p>
+              <div className="px-2">
+                <p className="mt-2">{member.role}</p>
+                <h4 className="text-3xl heading font-heading mb-2">
+                  {member.name}
+                </h4>
+                <p>{member.bio}</p>
+              </div>
             </div>
           ))}
         </div>
