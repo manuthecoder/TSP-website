@@ -7,7 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "The Steamology Project",
-  description: "Coming soon!",
 };
 
 export default function RootLayout({
@@ -33,6 +32,31 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
+        <title>The Steamology Project</title>
+        <meta name="title" content="The Steamology Project" />
+        <meta
+          name="description"
+          content="A community of students and educators who are passionate about STEAM"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thesteamologyproject.org/" />
+        <meta property="og:title" content="The Steamology Project" />
+        <meta
+          property="og:description"
+          content="A community of students and educators who are passionate about STEAM"
+        />
+        <meta property="og:image" content="/opengraph.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://thesteamologyproject.org/"
+        />
+        <meta property="twitter:title" content="The Steamology Project" />
+        <meta
+          property="twitter:description"
+          content="A community of students and educators who are passionate about STEAM"
+        />
+        <meta property="twitter:image" content="/opengraph.png" />
       </head>
       <body className={inter.className}>
         <Navbar />
