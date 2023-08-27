@@ -107,7 +107,8 @@ body {
   .howWeWork-grid {
     @apply w-full sm:text-center flex items-center justify-center sm:flex-col;
     & img {
-      @apply w-40 sm:w-60 h-40 sm:w-60 -ml-10;
+      @apply w-40 sm:w-60 h-40 sm:w-60;
+      margin-left: -30px !important;
       margin: auto;
       object-fit: cover;
     }
