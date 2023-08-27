@@ -76,7 +76,7 @@ export default function Page() {
   const [activeTab, setActiveTab] = useState("board");
 
   return (
-    <div className="container mb-10">
+    <div className="container my-10">
       {/* Our mission */}
       <div className="box p-0 overflow-hidden h-[50vh] relative">
         <Image
