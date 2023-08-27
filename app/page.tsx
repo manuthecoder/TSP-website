@@ -50,7 +50,7 @@ export default function Home() {
 
         {/* Grid */}
         <motion.div
-          className="flex mt-3 gap-2 flex-col sm:flex-row"
+          className="flex sm:mt-3 gap-2 flex-col sm:flex-row"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
