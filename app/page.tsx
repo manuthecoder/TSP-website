@@ -26,7 +26,7 @@ export default function Home() {
         {/*  */}
 
         {/* Grid */}
-        <div className="flex mt-3 gap-2 ">
+        <div className="flex mt-3 gap-2 flex-col sm:flex-row">
           <div className="box"></div>
           <div className="box">
             <h1 className="font-heading text-2xl mb-1">Our vision</h1>

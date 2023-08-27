@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <div className="text-center h-[100vh] flex items-center flex-col justify-center">
+    <div className="text-center h-[100vh] flex items-center flex-col justify-center px-4">
       <h1 className="text-4xl mb-1 font-heading font-[700]">
         Under construction!
       </h1>
