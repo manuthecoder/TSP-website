@@ -29,11 +29,15 @@ export function Navbar() {
         href={href}
         style={{
           ...(href === "https://forms.gle/zCMkYn8xqjhsTiTr9" && {
-            background: "var(--colors-purple)",
-            color: "#fff",
-            borderRadius: 9999,
+            background: "var(--colors-light-pink)",
+            color: "#000",
+            borderRadius: "8px",
             padding: "10px 15px",
           }),
+          textOverflow: "ellipsis",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          maxWidth: "100%",
           ...(isMobile && { display: "flex!important" }),
         }}
       >
@@ -48,8 +52,8 @@ export function Navbar() {
         <div className="navbar__logo" onClick={() => router.push("/")}>
           <Image src="/logo.svg" alt="Steamology Logo" width={40} height={40} />
           <h1 className="font-heading text-lg">
-            <span className="hidden md:inline">The Steamology Project</span>
-            <span className="inline md:hidden">TSP</span>
+            <span className="hidden sm:inline">The Steamology Project</span>
+            <span className="inline sm:hidden">TSP</span>
           </h1>
         </div>
 

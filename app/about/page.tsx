@@ -78,10 +78,7 @@ export default function Page() {
   return (
     <div className="container mb-10">
       {/* Our mission */}
-      <h1 className="font-heading text-4xl heading text-center mb-4 font-[100]">
-        About us
-      </h1>
-      <div className="box p-0 overflow-hidden h-[600px] relative">
+      <div className="box p-0 overflow-hidden h-[50vh] relative">
         <Image
           src="/activity.png?purge=dev-only"
           width={1043}
@@ -90,11 +87,15 @@ export default function Page() {
           style={{
             maxHeight: "100%",
             objectFit: "cover",
+            objectPosition: "top",
           }}
           alt="Activity"
         />
-        <div className="absolute bg-[rgba(0,0,0,0.7)] text-white bottom-0 right-0 m-5 backdrop-blur-lg p-3 px-8 rounded-full">
-          For your peers, by your peers
+        <div className="absolute flex justify-center items-center flex-col p-5 bg-[rgba(0,0,0,0.2)] text-white bottom-0 left-0 top-0 left-0 backdrop-blur-[7px] w-full h-full">
+          <h1 className="font-heading text-4xl mb-2 sm:text-6xl font-[700]">
+            About us
+          </h1>
+          <h1 className="text-xl opacity-90">For your peers, by your peers</h1>
         </div>
       </div>
 
@@ -277,7 +278,7 @@ export default function Page() {
                     />
                   </div>
                 </div>
-                <div>
+                <div className="text-center sm:text-left">
                   <h5 className="-ml-1 inline-flex bg-gray-200 rounded-full p-1 px-3 text-sm">
                     {activeMember.role}
                   </h5>
