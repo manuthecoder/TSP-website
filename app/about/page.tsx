@@ -301,9 +301,9 @@ export default function Page() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
             >
-              <div className="flex items-center gap-10 flex-col sm:flex-row">
+              <div className="flex items-center sm:gap-10 gap-4 flex-col sm:flex-row">
                 <div className="h-full shrink-0">
-                  <div className="w-36 h-36 border border-gray-700 rounded-full overflow-hidden">
+                  <div className="w-36 h-36 rounded-full overflow-hidden">
                     <Image
                       width={400}
                       height={400}
