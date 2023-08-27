@@ -93,7 +93,7 @@ export default function Page() {
         />
         <div className="absolute flex justify-center items-center flex-col p-5 bg-[rgba(0,0,0,0.2)] text-white bottom-0 left-0 top-0 left-0 backdrop-blur-[7px] w-full h-full">
           <h1 className="font-heading text-4xl mb-2 sm:text-6xl font-[700]">
-            About us
+            about us
           </h1>
           <h1 className="text-xl opacity-90">For your peers, by your peers</h1>
         </div>
@@ -119,7 +119,7 @@ export default function Page() {
       </div>
 
       {/* How we work section */}
-      <div className="mt-10">
+      <div className="mt-16">
         <h1 className="font-heading text-5xl heading text-center">
           how we work
         </h1>
