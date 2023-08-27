@@ -12,7 +12,7 @@ export default function Home() {
       <div className="container flex min-h-[100dvh] flex-col items-center justify-center">
         <div>
           {/* Banner */}
-          <div className="banner box mb-2 sm:mb-0 overflow-hidden h-auto px-5 to-gray-100 from-gray-100 relative h-[300px]">
+          <div className="banner box my-2 sm:my-0 overflow-hidden h-auto px-5 to-gray-100 from-gray-100 relative h-[300px]">
             <div className="banner__content sm:pt-20">
               <motion.div
                 initial={{ y: 20, opacity: 0, scale: 0.9 }}
