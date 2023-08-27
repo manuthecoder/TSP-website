@@ -119,7 +119,7 @@ export default function Page() {
       </div>
 
       {/* How we work section */}
-      <div className="mt-5">
+      <div className="mt-10">
         <h1 className="font-heading text-5xl heading text-center">
           how we work
         </h1>
