@@ -16,15 +16,17 @@ export function Navbar() {
       { name: "Blog", href: "/blog" },
       { name: "Start a Chapter", href: "https://forms.gle/CyhVa3TCHqi3aBTu8" },
       { name: "About", href: "/about" },
-      { name: "Support us", href: "/donate-now" },
+      { name: "Support Us", href: "/donate-now" },
       {
-        name: "Join our mailing list",
+        name: "Join our mailing list!",
         href: "https://forms.gle/zCMkYn8xqjhsTiTr9",
       },
     ].map(({ name, href }) => (
       <Link
         key={href}
-        className="navbar__link"
+        className={`navbar__link ${
+          isMobile && "px-3 py-2 active:bg-gray-200 rounded-lg"
+        }`}
         {...(href.includes("https://") && { target: "_blank" })}
         href={href}
         onClick={() => setMobileOpen(false)}
@@ -34,6 +36,7 @@ export function Navbar() {
             color: "#000",
             borderRadius: "8px",
             padding: "10px 15px",
+            marginTop: "4px",
           }),
           textOverflow: "ellipsis",
           overflow: "hidden",
@@ -67,7 +70,11 @@ export function Navbar() {
         <Links />
 
         {/* Search */}
-        <input type="text" placeholder="Search..." className="navbar__search" />
+        <input
+          type="text"
+          placeholder="Search..."
+          className="navbar__search rounded-lg"
+        />
         {!mobileOpen && (
           <div className="navbar__mobileButton cursor">
             <span className="material-symbols-outlined">search</span>
@@ -97,7 +104,7 @@ export function Navbar() {
           <input
             type="text"
             placeholder="Search..."
-            className="navbar__search"
+            className="navbar__search bg-gray-100 focus:bg-gray-200 mt-2 focus:ring-black focus:border-black rounded-lg"
             style={{ display: "block!important" }}
           />
         </motion.div>

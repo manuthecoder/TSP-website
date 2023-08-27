@@ -42,7 +42,7 @@ const staff = [
     bio: "Adah Wang, the Department Head of Science, has a passion for science and hopes to pursue a career in medicine. As an upcoming sophomore, they are focused on creating interesting and fun ways to explore scientific concepts to encourage others. Through TSP they hope to spark inspiration and spread the love of science.",
   },
   {
-    image: "/people/joshua.png",
+    image: "/people/joshua.png?purge=dev",
     name: "Joshua Kim",
     head: "department",
     role: "Technology",
@@ -138,7 +138,7 @@ export default function Page() {
         </h1>
 
         {/* 3 column grid */}
-        <div className="flex items-center mb-2 sm:gap-4 my-4 flex-col-reverse sm:flex-row">
+        <div className="flex items-center sm:gap-4 my-4 flex-col-reverse sm:flex-row">
           <div className="howWeWork-grid">
             <Image alt="icon" src="/about/01.svg" width={400} height={400} />
             <div>
@@ -190,7 +190,7 @@ export default function Page() {
       {/* Staff */}
       <div className="my-6 mt-10">
         <h1 className="font-heading text-5xl heading text-center mb-10">
-          our team
+          our staff
         </h1>
         <div className="flex gap-4 mt-3 flex-col sm:flex-row">
           {[

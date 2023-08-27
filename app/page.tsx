@@ -5,8 +5,6 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <>
       <div className="container flex min-h-[100dvh] flex-col items-center justify-center">

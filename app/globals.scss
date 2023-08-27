@@ -42,7 +42,7 @@ body {
   }
   // Navbar menu
   .navbar__menu {
-    @apply z-20 fixed top-0 px-4 pt-20 pb-4 backdrop-blur-lg bg-[rgba(255,255,255,.9)] flex flex-col w-full gap-2;
+    @apply z-20 fixed top-0 px-4 pt-20 pb-4 backdrop-blur-lg bg-[rgba(255,255,255,.9)] flex flex-col w-full;
   }
 
   // Navbar
@@ -107,7 +107,7 @@ body {
   .howWeWork-grid {
     @apply w-full sm:text-center flex items-center justify-center sm:flex-col;
     & img {
-      @apply w-40 sm:w-60 h-40 sm:w-60;
+      @apply w-40 sm:w-60 h-40 sm:w-60 -ml-10;
       margin: auto;
       object-fit: cover;
     }
