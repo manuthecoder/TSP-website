@@ -51,8 +51,8 @@ export function Navbar() {
     <>
       <motion.div
         className="navbar"
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
         <div className="navbar__logo" onClick={() => router.push("/")}>
