@@ -48,8 +48,8 @@ export function Navbar() {
         <div className="navbar__logo" onClick={() => router.push("/")}>
           <Image src="/logo.svg" alt="Steamology Logo" width={40} height={40} />
           <h1 className="font-heading text-lg">
-            <span className="hidden sm:inline">The Steamology Project</span>
-            <span className="inline sm:hidden">TSP</span>
+            <span className="hidden md:inline">The Steamology Project</span>
+            <span className="inline md:hidden">TSP</span>
           </h1>
         </div>
 
@@ -59,12 +59,14 @@ export function Navbar() {
         {/* Search */}
         <input type="text" placeholder="Search..." className="navbar__search" />
         {!mobileOpen && (
-          <div className="navbar__mobileButton">
+          <div className="navbar__mobileButton cursor">
             <span className="material-symbols-outlined">search</span>
           </div>
         )}
         <div
-          className={`navbar__mobileButton ${mobileOpen && "active"}`}
+          className={`cursor-default navbar__mobileButton ${
+            mobileOpen && "active"
+          }`}
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           <span className="material-symbols-outlined">
@@ -72,7 +74,9 @@ export function Navbar() {
           </span>
         </div>
       </div>
-      {mobileOpen && <div className="overlay" />}
+      {mobileOpen && (
+        <div className="overlay" onClick={() => setMobileOpen(false)} />
+      )}
       {mobileOpen && (
         <motion.div
           initial={{ y: -100, opacity: 0 }}

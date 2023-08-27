@@ -7,6 +7,7 @@
   --font-heading: "PT Serif", serif;
 
   --colors-red: #aa6f73;
+  --colors-light-pink: #caa5a8;
   --colors-purple: #66545e;
 }
 
@@ -31,11 +32,11 @@ body {
 @layer components {
   // overlay
   .overlay {
-    @apply fixed top-0 left-0 w-full h-full bg-gray-700 opacity-50 backdrop-blur-lg flex;
+    @apply fixed z-10 top-0 left-0 w-full h-full bg-gray-700 opacity-50 backdrop-blur-lg flex;
   }
   // Navbar menu
   .navbar__menu {
-    @apply fixed top-0 px-4 pt-20 pb-4 backdrop-blur-lg bg-[rgba(255,255,255,.9)] flex flex-col w-full gap-2;
+    @apply z-10 fixed top-0 px-4 pt-20 pb-4 backdrop-blur-lg bg-[rgba(255,255,255,.9)] flex flex-col w-full gap-2;
   }
 
   // Navbar
@@ -46,13 +47,13 @@ body {
       @apply flex items-center gap-5 mr-auto cursor-pointer;
     }
     & .navbar__search {
-      @apply hidden sm:block max-w-xs w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 ml-1 h-10;
+      @apply hidden md:block max-w-xs w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 ml-1 h-10;
     }
     & .navbar__link {
-      @apply items-center rounded-md hover:bg-gray-100 px-3 h-10 hidden sm:flex;
+      @apply items-center rounded-md hover:bg-gray-100 px-3 h-10 hidden md:flex;
     }
     & .navbar__mobileButton {
-      @apply active:bg-gray-100 h-10 w-10 rounded-full flex sm:hidden items-center justify-center;
+      @apply active:bg-gray-100 h-10 w-10 rounded-full flex md:hidden items-center justify-center;
 
       &.active {
         @apply bg-gray-100 active:bg-gray-200;
@@ -63,6 +64,13 @@ body {
   // Container
   .container {
     @apply pt-16 px-4 mt-10 w-full mx-auto;
+  }
+
+  .tab {
+    @apply px-4 py-2 hover:bg-gray-100 active:bg-gray-200 rounded-xl border border-gray-300 font-heading cursor-pointer;
+    &.active {
+      @apply bg-gray-200 hover:bg-gray-300 active:bg-gray-400;
+    }
   }
 
   // Banner
@@ -81,11 +89,16 @@ body {
     color: var(--colors-red);
   }
 
+  .border-red {
+    border-color: var(--colors-red);
+  }
+
   // About us page
   .howWeWork-grid {
     @apply w-full text-center;
     & img {
       height: 200px;
+      margin: auto;
       object-fit: cover;
     }
   }
