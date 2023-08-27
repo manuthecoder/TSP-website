@@ -208,14 +208,13 @@ export default function Page() {
             },
           ].map((member: any) => (
             <div className="w-full" key={member.name}>
-              <div className="box h-[500px] p-0 overflow-hidden">
+              <div className="box h-[500px] p-0 overflow-hidden relative">
                 <Image
                   src={member.image}
                   width={1241 / 2}
+                  className="absolute top-0 left-0 w-full h-full"
                   height={1443 / 2}
                   style={{
-                    height: "100%",
-                    width: "100%",
                     objectFit: "cover",
                     objectPosition: "bottom",
                   }}
