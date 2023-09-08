@@ -128,7 +128,15 @@ export default function Page() {
             cultivate the next generation of STEAM leaders.
           </div>
         </div>
-        <div className="box text-center sm:max-w-sm">(placeholder image)</div>
+        <div className="box text-center sm:max-w-sm relative overflow-hidden">
+          <Image
+            src="/photos/2.png"
+            width={287}
+            height={383.5}
+            alt="Photo"
+            className="absolute top-0 left-0 h-full w-full object-cover"
+          />
+        </div>
       </div>
 
       {/* How we work section */}
@@ -284,11 +292,7 @@ export default function Page() {
                           <h4 className="ellipsis overflow-hidden">
                             {member.name}
                           </h4>
-                          <p
-                            className="text-gray-600 text-md"
-                          >
-                            {member.role}
-                          </p>
+                          <p className="text-gray-600 text-md">{member.role}</p>
                         </div>
                       </div>
                     ))}

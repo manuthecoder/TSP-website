@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="container flex min-h-[100dvh] flex-col items-center justify-center">
+      <div className="container pb-6 flex min-h-[100dvh] flex-col items-center justify-center">
         <div>
           {/* Banner */}
           <div className="banner box mt-4 mb-2 sm:mb-0 overflow-hidden h-auto px-5 to-gray-100 from-gray-100 relative h-[300px]">
@@ -30,6 +30,12 @@ export default function Home() {
                   A community of students and educators who are passionate about
                   STEAM.
                 </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.25 }}
+              >
                 <button
                   onClick={() =>
                     window.open(
@@ -59,14 +65,22 @@ export default function Home() {
 
           {/* Grid */}
           <motion.div
-            className="flex mb-2 sm:mb-0 sm:mt-3 gap-2 flex-col sm:flex-row"
+            className="flex sm:mb-0 sm:mt-3 gap-2 flex-col sm:flex-row"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            <div className="box">(placeholder image)</div>
-            <div className="box">
-              <h1 className="font-heading text-2xl mb-1">Our vision</h1>
+            <div className="box max-w-xs relative overflow-hidden min-h-[287px] sm:min-h-auto">
+              <Image
+                src="/photos/1.png"
+                width={287}
+                height={383.5}
+                alt="Photo"
+                className="absolute top-0 left-0 h-full w-full object-cover"
+              />
+            </div>
+            <div className="box sm:min-h-[287px] flex flex-col">
+              <h1 className="font-heading text-3xl mb-1 mt-auto">Our vision</h1>
               <p>
                 The Steamology Project is dedicated to ignite curiosity and
                 foster innovation in the next generation of creative STEAM

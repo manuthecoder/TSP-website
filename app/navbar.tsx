@@ -36,7 +36,7 @@ export function Navbar() {
             color: "#000",
             borderRadius: "8px",
             padding: "10px 15px",
-            marginTop: "4px",
+            marginTop: isMobile ? "4px" : "",
           }),
           textOverflow: "ellipsis",
           overflow: "hidden",
