@@ -30,6 +30,17 @@ export default function Home() {
                   A community of students and educators who are passionate about
                   STEAM.
                 </p>
+                <button
+                  onClick={() =>
+                    window.open(
+                      `https://docs.google.com/spreadsheets/d/1SJ8kill2svrpVPj_T17qBBxE4W3LhPNm8atORVHLMGQ/edit#gid=0`
+                    )
+                  }
+                  className="active:shadow-xl px-5 py-2 mt-2 rounded-full text-white hover:shadow-lg bg-[#aa6f73] flex items-center gap-2"
+                >
+                  Find a chapter
+                  <span className="material-symbols-outlined">north_east</span>
+                </button>
               </motion.div>
 
               <Image

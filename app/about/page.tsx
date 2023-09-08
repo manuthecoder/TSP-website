@@ -1,9 +1,9 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
 const staff = [
   {
@@ -83,7 +83,7 @@ export default function Page() {
           src="/activity.png?purge=dev-only"
           width={1043}
           height={817}
-          className="w-full rounded-xl h-full absolute top-0 left-0 w-full h-full"
+          className="w-full rounded-xl absolute top-0 left-0 h-full"
           style={{
             maxHeight: "100%",
             objectFit: "cover",
@@ -91,7 +91,7 @@ export default function Page() {
           }}
           alt="Activity"
         />
-        <div className="absolute flex justify-center items-center flex-col p-5 bg-[rgba(0,0,0,0.2)] text-white bottom-0 left-0 top-0 left-0 backdrop-blur-[7px] w-full h-full">
+        <div className="absolute flex justify-center items-center flex-col p-5 bg-[rgba(0,0,0,0.2)] text-white bottom-0 left-0 top-0 backdrop-blur-[7px] w-full h-full">
           <motion.div
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -216,7 +216,8 @@ export default function Page() {
                   height={1443 / 2}
                   style={{
                     objectFit: "cover",
-                    objectPosition: "bottom",
+                    objectPosition:
+                      member.name === "Ashley Liau" ? "center" : "bottom",
                   }}
                   alt={member.name}
                 />
@@ -226,7 +227,7 @@ export default function Page() {
                 <h4 className="text-3xl heading font-heading mb-2">
                   {member.name}
                 </h4>
-                <p>{member.bio}</p>
+                <p className="text-gray-900">{member.bio}</p>
               </div>
             </div>
           ))}
@@ -276,14 +277,18 @@ export default function Page() {
                         onClick={() => setActiveMember(member)}
                       >
                         <div
-                          className={`tab min-w-[200px] sm:min-w-[10px] ${
+                          className={`tab text-gray-900 min-w-[200px] sm:min-w-[10px] ${
                             activeMember.name === member.name && "active"
                           }`}
                         >
                           <h4 className="ellipsis overflow-hidden">
                             {member.name}
                           </h4>
-                          <p>{member.role}</p>
+                          <p
+                            className="text-gray-600 text-md"
+                          >
+                            {member.role}
+                          </p>
                         </div>
                       </div>
                     ))}

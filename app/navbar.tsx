@@ -13,9 +13,9 @@ export function Navbar() {
   const Links = ({ isMobile = false }) => {
     return [
       { name: "Magazine", href: "/magazine" },
+      { name: "About", href: "/about" },
       { name: "Blog", href: "/blog" },
       { name: "Start a Chapter", href: "https://forms.gle/CyhVa3TCHqi3aBTu8" },
-      { name: "About", href: "/about" },
       { name: "Support Us", href: "/donate-now" },
       {
         name: "Join our mailing list!",

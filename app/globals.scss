@@ -81,6 +81,9 @@ body {
     &.active {
       @apply bg-gray-200 hover:bg-gray-300 active:bg-gray-400;
     }
+    & p {
+      font-size: 15px !important;
+    }
   }
 
   // Banner
