@@ -112,7 +112,7 @@ export default function Page() {
       </div>
 
       {/* About us */}
-      <div className="flex mt-5 gap-3 flex-col-reverse sm:flex-row">
+      <div className="flex mt-5 gap-3 flex-col sm:flex-row">
         <div className="w-full flex flex-col py-7">
           <div className="p-5">
             <h1 className="font-heading text-5xl heading sm:text-left text-center">
@@ -127,7 +127,7 @@ export default function Page() {
             cultivate the next generation of STEAM leaders.
           </div>
         </div>
-        <div className="box text-center sm:max-w-sm relative overflow-hidden">
+        <div className="box text-center sm:max-w-sm relative overflow-hidden min-h-[300px]">
           <Image
             src="/photos/2.png"
             width={287}
