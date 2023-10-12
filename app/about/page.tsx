@@ -80,7 +80,7 @@ export default function Page() {
       {/* Our mission */}
       <div className="box p-0 overflow-hidden h-[80vh] relative">
         <Image
-          src="/activity.jpeg"
+          src="/activity.png"
           width={1043}
           height={817}
           className="w-full rounded-xl absolute top-0 left-0 h-full"
@@ -90,7 +90,7 @@ export default function Page() {
           }}
           alt="Activity"
         />
-        <div className="absolute flex justify-center items-center flex-col p-5 bg-[rgba(0,0,0,0.2)] text-white bottom-0 left-0 top-0 w-full h-full">
+        <div className="absolute flex justify-center items-center backdrop-blur-lg flex-col p-5 bg-[rgba(0,0,0,0.2)] text-white bottom-0 left-0 top-0 w-full h-full">
           <motion.div
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

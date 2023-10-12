@@ -13,7 +13,7 @@ export function Navbar() {
   const Links = ({ isMobile = false }) => {
     return [
       { name: "About", href: "/about" },
-      { name: "Magazine", href: "/magazine" },
+      { name: "Magazine", href: "//magazine.thesteamologyproject.org" },
       { name: "Blog", href: "/blog" },
       { name: "Start a Chapter", href: "https://forms.gle/CyhVa3TCHqi3aBTu8" },
       { name: "Support Us", href: "/donate-now" },
