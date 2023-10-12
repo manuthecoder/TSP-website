@@ -73,8 +73,8 @@ export default function Home() {
             <div className="box sm:max-w-xs relative overflow-hidden sm:min-h-[287px] min-h-[400px] sm:min-h-auto">
               <Image
                 src="/home.jpeg"
-                width={287}
-                height={383.5}
+                width={700}
+                height={700}
                 alt="Photo"
                 className="absolute top-0 left-0 h-full w-full object-cover"
               />

@@ -78,7 +78,7 @@ export default function Page() {
   return (
     <div className="container my-10">
       {/* Our mission */}
-      <div className="box p-0 overflow-hidden h-[80vh] relative">
+      <div className="box p-0 overflow-hidden h-[55vh] relative">
         <Image
           src="/activity.png"
           width={1043}
