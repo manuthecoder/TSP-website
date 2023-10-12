@@ -78,26 +78,25 @@ export default function Page() {
   return (
     <div className="container my-10">
       {/* Our mission */}
-      <div className="box p-0 overflow-hidden h-[50vh] relative">
+      <div className="box p-0 overflow-hidden h-[80vh] relative">
         <Image
-          src="/activity.png?purge=dev-only"
+          src="/activity.jpeg"
           width={1043}
           height={817}
           className="w-full rounded-xl absolute top-0 left-0 h-full"
           style={{
             maxHeight: "100%",
             objectFit: "cover",
-            objectPosition: "top",
           }}
           alt="Activity"
         />
-        <div className="absolute flex justify-center items-center flex-col p-5 bg-[rgba(0,0,0,0.2)] text-white bottom-0 left-0 top-0 backdrop-blur-[7px] w-full h-full">
+        <div className="absolute flex justify-center items-center flex-col p-5 bg-[rgba(0,0,0,0.2)] text-white bottom-0 left-0 top-0 w-full h-full">
           <motion.div
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
             <h1 className="font-heading text-5xl mb-1 sm:text-6xl font-[700]">
-              about us
+              About Us
             </h1>
           </motion.div>
           <motion.div
