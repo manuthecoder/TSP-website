@@ -57,6 +57,9 @@ export function Navbar() {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5 }}
+        onClick={(e) =>
+          document.documentElement.scrollTo({ top: 0, behavior: "smooth" })
+        }
       >
         <div className="navbar__logo" onClick={() => router.push("/")}>
           <Image src="/logo.svg" alt="Steamology Logo" width={40} height={40} />
