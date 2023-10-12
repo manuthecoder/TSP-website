@@ -70,7 +70,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            <div className="box max-w-xs relative overflow-hidden min-h-[287px] sm:min-h-auto">
+            <div className="box sm:max-w-xs relative overflow-hidden sm:min-h-[287px] min-h-[400px] sm:min-h-auto">
               <Image
                 src="/photos/1.png"
                 width={287}
