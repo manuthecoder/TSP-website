@@ -79,7 +79,10 @@ export function Navbar() {
           className="navbar__search rounded-lg"
         />
         {!mobileOpen && (
-          <div className="navbar__mobileButton cursor">
+          <div
+            className="navbar__mobileButton cursor"
+            onClick={() => alert("Coming soon!")}
+          >
             <span className="material-symbols-outlined">search</span>
           </div>
         )}
@@ -87,7 +90,10 @@ export function Navbar() {
           className={`cursor-default navbar__mobileButton ${
             mobileOpen && "active"
           }`}
-          onClick={() => setMobileOpen(!mobileOpen)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setMobileOpen(!mobileOpen);
+          }}
         >
           <span className="material-symbols-outlined">
             {mobileOpen ? "close" : "menu"}
